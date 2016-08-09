@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.DisplayMovieActivity"
+    tools:showIn="@layout/activity_display_movie">
+
+    <RelativeLayout
+        android:id="@+id/content_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/title_padding"
+            android:paddingStart="@dimen/left_rigt_padding"
+            android:paddingLeft="@dimen/left_rigt_padding"
+            android:paddingRight="@dimen/left_rigt_padding"/>
+
+       <RelativeLayout
+           android:id="@+id/genre_runtime"
+           android:padding="@dimen/left_rigt_padding"
+           android:layout_below="@id/title_text"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/genre"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentStart="true"
+               android:textColor="@color/genre_runtime_color"
+               />
+
+           <TextView
+               android:id="@+id/runtime"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/genre_runtime_color"
+               android:layout_alignParentEnd="true"
+               />
+       </RelativeLayout>
+
+        <TextView
+            android:id="@+id/plot"
+            android:layout_below="@id/genre_runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/plot_margin"
+        />
+
+        <TextView
+            android:id="@+id/space_plot"
+            android:layout_below="@id/plot"
+            android:background="@color/colorSpace"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space" />
+
+        <RelativeLayout
+            android:id="@+id/crew"
+            android:layout_below="@id/plot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/crew_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subtitle_text_size"
+                android:padding="@dimen/left_rigt_padding"
+                android:text="@string/top_billed_crew"
+                />
+
+            <TextView
+                android:id="@+id/director_title"
+                android:layout_below="@id/crew_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:paddingStart="@dimen/left_rigt_padding"
+                android:paddingLeft="@dimen/left_rigt_padding"
+                android:paddingRight="@dimen/left_rigt_padding"
+                android:textStyle="bold"
+                android:text="@string/director"
+                />
+
+            <TextView
+                android:id="@+id/directors"
+                android:layout_below="@id/director_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/left_rigt_padding"
+                android:paddingLeft="@dimen/left_rigt_padding"
+                android:paddingRight="@dimen/left_rigt_padding"
+                />
+
+            <TextView
+                android:id="@+id/space_cast"
+                android:layout_below="@id/directors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/writer_title"
+                android:layout_below="@id/space_cast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:paddingStart="@dimen/left_rigt_padding"
+                android:paddingLeft="@dimen/left_rigt_padding"
+                android:paddingRight="@dimen/left_rigt_padding"
+                android:textStyle="bold"
+                android:text="@string/writers"
+                />
+
+            <TextView
+                android:id="@+id/writers"
+                android:layout_below="@id/writer_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/left_rigt_padding"
+                android:paddingLeft="@dimen/left_rigt_padding"
+                android:paddingRight="@dimen/left_rigt_padding"
+                android:paddingBottom="@dimen/left_rigt_padding"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/crew_space"
+            android:layout_below="@id/crew"
+            android:background="@color/colorSpace"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space" />
+
+        <RelativeLayout
+            android:id="@+id/cast"
+            android:layout_below="@id/crew_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/cast_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/subtitle_text_size"
+                android:padding="@dimen/left_rigt_padding"
+                android:text="@string/top_billed_cast"
+                />
+
+            <TextView
+                android:id="@+id/cast_list"
+                android:layout_below="@id/cast_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:padding="@dimen/left_rigt_padding"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

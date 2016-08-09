@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MovieRecognition</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <!--intent keys-->
+    <string name="movie_id_intent_key">film_id</string>
+
+    <!--json keys-->
+    <string name="movie_title_key">Title</string>    
+    <string name="movie_year_key">Year</string>
+    <string name="movie_genre_key">Genre</string>
+    <string name="movie_runtime_key">Runtime</string>
+    <string name="movie_plot_key">Plot</string>
+    <string name="movie_director_key">Director</string>
+    <string name="movie_writer_key">Writer</string>
+    <string name="movie_actors_key">Actors</string>
+    <string name="movie_poster_key">Poster</string>
+    <string name="frame_hashes_post_key">frame_hashes</string>
+
+    <!--strings for display movie activity designing-->
+    <string name="gravity_falls_plot">"Twin siblings Dipper and Mabel Pines spend the summer at "
+        "their great-uncle's tourist trap and must unlock the secrets surrounding the enigmatic "
+        "town of Gravity Falls, Oregon."</string>
+
+    <!--string value that is returned in case the film is not identified-->
+    <string name="not_found_string">not_found</string>
+
+    <!--not found film id-->
+    <string name="not_found_film_id">tt0087349</string>
+
+    <!--omdb api url-->
+    <string name="omdb_api_url">http://www.omdbapi.com/?i=%s&amp;plot=full&amp;r=json</string>
+
+    <!--server url-->
+    <string name="server_url">http://movie-recognition-env.zdzijakcmb.us-west-2.elasticbeanstalk.com/film_lookup/</string>
+
+    <!--native library name-->
+    <string name="compute_hash_library">compute_hash_library</string>
+
+    <!--titles and subtitles-->
+    <string name="top_billed_crew">Top Billed Crew</string>
+    <string name="top_billed_cast">Top Billed Cast</string>
+    <string name="director">Director</string>
+    <string name="writers">Writers</string>
+
+</resources>
