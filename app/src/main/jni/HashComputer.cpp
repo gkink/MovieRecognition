@@ -71,7 +71,7 @@ bool crop(Mat &image) {
   Point center = Point(height / 2, width / 2);
   vector <Point> frame_contour;
   for (vector< vector<Point> >::iterator cnt = contours.begin(); cnt != contours.end(); ++cnt) {
-    if (pointPolygonTest(*cnt, center, false) == 1) {
+    if (pointPolygonTest(*cnt, center, false) > 0) {
       frame_contour = *cnt;
       break;
     }
